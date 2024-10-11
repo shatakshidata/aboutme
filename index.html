@@ -6,98 +6,80 @@
     <meta name="description" content="Shatakshi Bhatnagar - Data Scientist & Marketing Analyst Portfolio">
     <meta name="author" content="Shatakshi Bhatnagar">
     <title>Shatakshi Bhatnagar | Portfolio</title>
-
+    
     <!-- CSS: Bulma Framework and Custom Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 
     <style>
         body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f7f9fc;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
             color: #333;
             scroll-behavior: smooth;
         }
 
-        /* Header section */
+        /* Header Section */
         .hero {
-            background-color: #24292e;
-            color: #fff;
+            background-color: #2c3e50;
+            color: white;
             padding: 3rem 0;
             text-align: center;
         }
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 600;
         }
         .hero h2 {
             font-size: 1.5rem;
-            font-weight: 400;
+            font-weight: 300;
             margin-bottom: 2rem;
         }
 
         .btn {
-            font-weight: 600;
+            font-weight: 500;
             padding: 0.75rem 1.5rem;
             border-radius: 30px;
             margin: 0.5rem;
         }
         .btn-linkedin {
             background-color: #0077b5;
-            color: #fff;
+            color: white;
         }
         .btn-linkedin:hover {
             background-color: #005582;
         }
         .btn-email {
             background-color: #3273dc;
-            color: #fff;
+            color: white;
         }
         .btn-email:hover {
             background-color: #2751a7;
         }
 
-        /* About section */
+        /* Section Titles */
         .section-title {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
             color: #3273dc;
             text-align: center;
         }
-        #about {
-            padding: 4rem 0;
+
+        /* Work Experience Section */
+        #work-experience h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
         }
-        #about p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
+        #work-experience p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
             color: #555;
         }
 
-        /* Projects section */
-        #projects .box {
-            padding: 2rem;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        #projects .box:hover {
-            transform: translateY(-5px);
-        }
-        #projects h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-        #projects p {
-            color: #666;
-        }
-
-        /* Skills section */
+        /* Skills Section */
         #skills {
             padding: 4rem 0;
         }
@@ -119,8 +101,8 @@
 
         /* Footer */
         footer {
-            background-color: #24292e;
-            color: #fff;
+            background-color: #2c3e50;
+            color: white;
             padding: 2rem 0;
             text-align: center;
         }
@@ -153,41 +135,35 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <p>
-                I am a Data Scientist and Marketing Analyst with experience in automating processes using machine learning, analyzing complex datasets, and leveraging marketing strategies to drive business growth. 
-                I have worked with global companies like Darwinbox and Tata Metaliks, delivering impactful results through predictive modeling, data visualization, and optimization techniques.
+                I am a Data Scientist and Marketing Analyst with experience in automating processes using machine learning, analyzing complex datasets, and leveraging marketing strategies to drive business growth. I have worked with global companies like Darwinbox and Tata Metaliks, delivering impactful results through predictive modeling, data visualization, and optimization techniques.
             </p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section has-background-light">
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="section has-background-light">
         <div class="container">
-            <h2 class="section-title">Key Projects</h2>
-            <div class="columns">
-                <div class="column is-one-third">
-                    <div class="box">
-                        <h3 class="title is-4">AI-Powered Candidate Sourcing Tool</h3>
-                        <p>
-                            Developed an AI tool using LLMs to automate candidate sourcing, reducing manual effort by over 20 hours per recruiter at Seventh Sense Consulting.
-                        </p>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="box">
-                        <h3 class="title is-4">Price Forecasting Model</h3>
-                        <p>
-                            Created a Random Forest model to forecast prices with 92% accuracy, helping Tata Metaliks optimize pricing strategy and sales insights.
-                        </p>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="box">
-                        <h3 class="title is-4">Marketing Analytics Dashboards</h3>
-                        <p>
-                            Led the creation of 15+ automated Power BI dashboards for sales performance, improving decision-making and increasing conversions by 18% at Darwinbox.
-                        </p>
-                    </div>
-                </div>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="content">
+                <h3>Data Scientist | Seventh Sense Consulting</h3>
+                <p>Aug 2024 – Present</p>
+                <p>Developing an AI-powered tool to automate the candidate sourcing process using LLM and ML models, saving over 20 hours of manual work for recruiters.</p>
+
+                <h3>Business Analyst & Operations | Darwinbox</h3>
+                <p>Dec 2022 – July 2024</p>
+                <p>Led marketing operations, increasing conversions by 18% through CRO strategies and tools like GA4 and Hotjar. Built automated workflows on HubSpot, and analyzed large datasets to generate insights on HR trends.</p>
+
+                <h3>Marketing Analyst | Tata Metaliks</h3>
+                <p>May 2021 – Dec 2022</p>
+                <p>Developed a price forecasting model using Python, achieving 92% accuracy. Implemented digital marketing strategies that increased web traffic by 25%, while improving sales insights through automated Power BI dashboards.</p>
+
+                <h3>Summer Intern | Tata Metaliks</h3>
+                <p>Apr 2020 – May 2020</p>
+                <p>Awarded Best Management Trainee for developing Power BI dashboards and using descriptive and text analytics to derive customer insights.</p>
+
+                <h3>Web Analyst Intern | Aditya Birla Fashion and Retail</h3>
+                <p>Oct 2020 – Jan 2021</p>
+                <p>Reduced drop-offs by 5% through web analytics using tools like Adobe Analytics and Hotjar, enhancing customer experience on their digital platforms.</p>
             </div>
         </div>
     </section>
@@ -225,8 +201,20 @@
         </div>
     </section>
 
+    <!-- Activities & Leadership Section -->
+    <section id="activities-leadership" class="section has-background-light">
+        <div class="container">
+            <h2 class="section-title">Activities & Leadership</h2>
+            <div class="content">
+                <p>Best Reverse Mentor for Data Analytics project – Collaborated with the Head of Sales to implement key data strategies.</p>
+                <p>Runner-up in SmartCube Data Analytics Corporate Competition – Applied data analytics skills to solve complex business challenges.</p>
+                <p>Leader of the Data Analytics Society – Organized sessions and projects to help students enhance their analytical skills.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Certifications Section -->
-    <section id="certifications" class="section has-background-light">
+    <section id="certifications" class="section">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
             <ul>
