@@ -1,2 +1,47 @@
-title: Shatakshi Bhatnagar
-theme: jekyll-theme-minimal
+# DevFolio Theme Configuration
+
+name: "Shatakshi Bhatnagar"
+tagline: "Data Scientist & Marketing Analyst"
+description: "Portfolio showcasing my projects and expertise in data science, marketing analytics, and AI."
+avatar: "assets/images/profile.jpg" # Ensure this image is added in your assets folder.
+social_links:
+  - { name: "LinkedIn", url: "https://www.linkedin.com/in/shatakshibhatnagar/", icon: "fab fa-linkedin" }
+  - { name: "GitHub", url: "https://github.com/shatakshi99", icon: "fab fa-github" }
+  - { name: "Email", url: "mailto:sb99@illinois.edu", icon: "fas fa-envelope" }
+
+# Layout Sections
+sections:
+  - title: "About Me"
+    content: "I am an experienced data scientist and marketing analyst with a passion for transforming data into insights. With a strong foundation in machine learning, data analysis, and marketing strategy, I create solutions that drive impact."
+  
+  - title: "Skills"
+    content:
+      - "Programming: Python, R, SQL, SPSS"
+      - "Data Analysis: Excel, Tableau, Power BI"
+      - "Web Analytics: Adobe Analytics, Google Analytics, Hotjar, Semrush"
+      - "Cloud & Platforms: AWS, Google Cloud Platform, DataBricks"
+      - "Machine Learning: Neural Networks, Deep Learning, Clustering, ARIMA"
+      - "Marketing Tools: HubSpot, Marketo, Google Search Console"
+
+  - title: "Projects"
+    content:
+      - { name: "AI Candidate Sourcing Tool", description: "Developed an AI-powered candidate sourcing tool using LLMs, saving 20+ hours of recruiter time.", link: "#" }
+      - { name: "Price Forecasting Model", description: "Built a Random Forest model to forecast prices with 92% accuracy for Tata Metaliks.", link: "#" }
+      - { name: "Consumer Behavior Analysis", description: "Analyzed consumer behavior for food delivery apps using Python and SPSS.", link: "#" }
+
+  - title: "Certifications"
+    content:
+      - { name: "Intro to R, Python, and SQL", description: "For Data Analysis" }
+      - { name: "Power BI for Business Intelligence", description: "" }
+      - { name: "Neural Networks and Deep Learning", description: "" }
+      - { name: "Machine Learning on Google Cloud", description: "" }
+      - { name: "Marketing Analytics", description: "" }
+
+  - title: "Leadership & Achievements"
+    content:
+      - { name: "Best Reverse Mentor", description: "Reverse mentored and collaborated with the Head of Sales on a data project." }
+      - { name: "SmartCube Data Analytics Competition", description: "Runner-up in the competition for innovative data analysis solutions." }
+      - { name: "Data Analytics Society Leader", description: "Led workshops and analytics sessions for a community of data enthusiasts." }
+
+  - title: "Contact Me"
+    content: "I'm always open to discussing new projects and opportunities. Reach me via email or LinkedIn!"
