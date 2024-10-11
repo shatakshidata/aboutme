@@ -1,7 +1,5 @@
 title: "Shatakshi Bhatnagar's Portfolio"
 description: "Portfolio showcasing my projects in data science, marketing analytics, and AI."
-baseurl: "" # Use this if you are hosting your portfolio in a subpath (e.g., `/devportfolio`)
-url: "https://yourusername.github.io" # Update with your own GitHub pages URL or domain
 
 # Theme Configuration
 theme: jekyll-theme-devfolio
@@ -32,6 +30,4 @@ sections:
 permalink: pretty
 paginate: 5
 
-# Customization Options
-avatar: "assets/images/profile.jpg" # Ensure the image exists in the assets folder
 
