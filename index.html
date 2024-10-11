@@ -20,10 +20,10 @@
             scroll-behavior: smooth;
         }
 
-        /* Header Section */
+        /* Header Section with Gradient */
         .hero {
-            background-color: #2c3e50;
-            color: white;
+            background: linear-gradient(135deg, #e0bbf4, #f3d1f4);
+            color: #333;
             padding: 3rem 0;
             text-align: center;
         }
@@ -63,51 +63,73 @@
             font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
-            color: #3273dc;
+            color: #7e57c2;
             text-align: center;
         }
 
-        /* Work Experience Section */
-        #work-experience h3 {
+        /* Interactive Tile for Projects and Work Experience */
+        .tile {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .tile h3 {
             font-size: 1.5rem;
             font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-        #work-experience p {
-            font-size: 1rem;
             margin-bottom: 1rem;
-            color: #555;
         }
 
         /* Skills Section */
-        #skills {
-            padding: 4rem 0;
-        }
-        .skill-bar {
+        #skills .skill-bar {
             background-color: #e1e1e1;
             border-radius: 30px;
             padding: 0.3rem;
             margin-bottom: 1.2rem;
         }
-        .skill-level {
-            background-color: #3273dc;
+        #skills .skill-level {
+            background-color: #7e57c2;
             height: 1.2rem;
             border-radius: 30px;
+            font-size: 0.9rem;
+            color: white;
+            padding-left: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .skill-label {
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
 
+        /* Certification Section with Icons */
+        .certification-item {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .certification-item i {
+            margin-right: 10px;
+            color: #7e57c2;
+        }
+
         /* Footer */
         footer {
-            background-color: #2c3e50;
+            background-color: #e0bbf4;
             color: white;
             padding: 2rem 0;
             text-align: center;
         }
         footer p {
             font-size: 0.9rem;
+            color: #333;
         }
     </style>
 </head>
@@ -140,30 +162,59 @@
         </div>
     </section>
 
-    <!-- Work Experience Section -->
-    <section id="work-experience" class="section has-background-light">
+    <!-- Key Projects Section with Interactive Tiles -->
+    <section id="projects" class="section has-background-light">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="tile">
+                        <h3>AI-Powered Candidate Sourcing Tool</h3>
+                        <p>Developed an AI tool using LLMs to automate candidate sourcing, reducing manual effort by over 20 hours per recruiter at Seventh Sense Consulting.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="tile">
+                        <h3>Price Forecasting Model</h3>
+                        <p>Created a Random Forest model to forecast prices with 92% accuracy, helping Tata Metaliks optimize pricing strategy and sales insights.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="tile">
+                        <h3>Marketing Analytics Dashboards</h3>
+                        <p>Led the creation of 15+ automated Power BI dashboards for sales performance, improving decision-making and increasing conversions by 18% at Darwinbox.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section as Interactive Tiles -->
+    <section id="work-experience" class="section">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
-            <div class="content">
-                <h3>Data Scientist | Seventh Sense Consulting</h3>
-                <p>Aug 2024 – Present</p>
-                <p>Developing an AI-powered tool to automate the candidate sourcing process using LLM and ML models, saving over 20 hours of manual work for recruiters.</p>
-
-                <h3>Business Analyst & Operations | Darwinbox</h3>
-                <p>Dec 2022 – July 2024</p>
-                <p>Led marketing operations, increasing conversions by 18% through CRO strategies and tools like GA4 and Hotjar. Built automated workflows on HubSpot, and analyzed large datasets to generate insights on HR trends.</p>
-
-                <h3>Marketing Analyst | Tata Metaliks</h3>
-                <p>May 2021 – Dec 2022</p>
-                <p>Developed a price forecasting model using Python, achieving 92% accuracy. Implemented digital marketing strategies that increased web traffic by 25%, while improving sales insights through automated Power BI dashboards.</p>
-
-                <h3>Summer Intern | Tata Metaliks</h3>
-                <p>Apr 2020 – May 2020</p>
-                <p>Awarded Best Management Trainee for developing Power BI dashboards and using descriptive and text analytics to derive customer insights.</p>
-
-                <h3>Web Analyst Intern | Aditya Birla Fashion and Retail</h3>
-                <p>Oct 2020 – Jan 2021</p>
-                <p>Reduced drop-offs by 5% through web analytics using tools like Adobe Analytics and Hotjar, enhancing customer experience on their digital platforms.</p>
+            <div class="columns">
+                <div class="column">
+                    <div class="tile">
+                        <h3>Data Scientist | Seventh Sense Consulting</h3>
+                        <p>Aug 2024 – Present</p>
+                        <p>Developed an AI-powered tool to automate the candidate sourcing process using LLM and ML models, saving over 20 hours of manual work for recruiters.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="tile">
+                        <h3>Business Analyst & Operations | Darwinbox</h3>
+                        <p>Dec 2022 – July 2024</p>
+                        <p>Led marketing operations, increasing conversions by 18% through CRO strategies and tools like GA4 and Hotjar. Built automated workflows on HubSpot, and analyzed large datasets to generate insights on HR trends.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="tile">
+                        <h3>Marketing Analyst | Tata Metaliks</h3>
+                        <p>May 2021 – Dec 2022</p>
+                        <p>Developed a price forecasting model using Python, achieving 92% accuracy. Implemented digital marketing strategies that increased web traffic by 25%, while improving sales insights through automated Power BI dashboards.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -201,8 +252,29 @@
         </div>
     </section>
 
+    <!-- Certifications Section with Icons -->
+    <section id="certifications" class="section has-background-light">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="content">
+                <p class="certification-item">
+                    <i class="fas fa-database"></i> Intro to R, Python, and SQL for Data Analysis
+                </p>
+                <p class="certification-item">
+                    <i class="fas fa-chart-bar"></i> Power BI for Business Intelligence
+                </p>
+                <p class="certification-item">
+                    <i class="fas fa-brain"></i> Neural Networks and Deep Learning
+                </p>
+                <p class="certification-item">
+                    <i class="fas fa-cloud"></i> Machine Learning on Google Cloud Platform
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Activities & Leadership Section -->
-    <section id="activities-leadership" class="section has-background-light">
+    <section id="activities-leadership" class="section">
         <div class="container">
             <h2 class="section-title">Activities & Leadership</h2>
             <div class="content">
@@ -210,19 +282,6 @@
                 <p>Runner-up in SmartCube Data Analytics Corporate Competition – Applied data analytics skills to solve complex business challenges.</p>
                 <p>Leader of the Data Analytics Society – Organized sessions and projects to help students enhance their analytical skills.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <ul>
-                <li>Intro to R, Python, and SQL for Data Analysis</li>
-                <li>Power BI for Business Intelligence</li>
-                <li>Neural Networks and Deep Learning</li>
-                <li>Machine Learning on Google Cloud Platform</li>
-            </ul>
         </div>
     </section>
 
