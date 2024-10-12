@@ -20,9 +20,9 @@
             scroll-behavior: smooth;
         }
 
-        /* Navigation Bar */
+        /* Navigation Bar with More Distinct Contrast */
         .navbar {
-            background-color: #7e57c2;
+            background-color: #4a3f8e; /* Darker purple for better contrast */
             padding: 1rem 2rem;
         }
         .navbar-item {
@@ -31,29 +31,29 @@
             margin-right: 1.5rem;
         }
         .navbar-item:hover {
-            color: #e0bbf4;
+            color: #d1c4e9;
         }
 
-        /* Header Section with Light Purple Gradient and Enlarged Image */
+        /* Header Section with Smaller Light Purple Gradient and Image Fix */
         .hero {
-            background: linear-gradient(135deg, #c4a9f4, #e0c8f4); /* Light Purple Gradient */
+            background: linear-gradient(135deg, #c4a9f4, #dcd4f7); /* Softer light purple */
             color: #333;
-            padding: 3rem 0;
+            padding: 2rem 0; /* Reduced padding to make banner smaller */
             text-align: center;
             position: relative;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.5rem; /* Slightly smaller text */
             font-weight: 600;
         }
         .hero h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 300;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
         .hero img {
-            width: 200px; /* Increased size */
-            height: 200px;
+            width: 180px; /* Adjusted image size */
+            height: 180px;
             border-radius: 50%;
             margin-bottom: 1rem;
             border: 5px solid white;
@@ -108,8 +108,10 @@
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
         .tile img {
-            width: 100px;
+            width: 100px; /* Fixed width for logos */
+            height: auto; /* Auto height to maintain aspect ratio */
             margin-bottom: 1rem;
+            object-fit: contain; /* Prevent overflow */
         }
         .tile h3 {
             font-size: 1.5rem;
@@ -149,7 +151,7 @@
     <section class="hero is-medium">
         <div class="hero-body">
             <div class="container">
-                <img src="https://github.com/shatakshidata/aboutme/blob/main/Headshot.jpg" alt="Shatakshi Bhatnagar">
+                <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/Headshot.jpg" alt="Shatakshi Bhatnagar"> <!-- Fixed image URL -->
                 <h1 class="title">Shatakshi Bhatnagar</h1>
                 <h2 class="subtitle">Data Scientist & Marketing Analyst</h2>
                 <p>M.S. in Business Analytics | University of Illinois Urbana-Champaign</p>
@@ -180,21 +182,21 @@
             <div class="columns">
                 <div class="column">
                     <div class="tile">
-                        <img src="https://github.com/shatakshidata/aboutme/blob/main/seventhsense.png" alt="Seventh Sense">
+                        <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/seventhsense.png" alt="Seventh Sense">
                         <h3>Data Scientist</h3>
                         <p>Seventh Sense Consulting (Aug 2024 - Present)<br>Developed an AI-powered tool to automate candidate sourcing.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <img src="https://github.com/shatakshidata/aboutme/blob/main/darwinbox.png" alt="Darwinbox">
+                        <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/darwinbox.png" alt="Darwinbox">
                         <h3>Business Analyst</h3>
                         <p>Darwinbox (Dec 2022 - Jul 2024)<br>Led marketing operations, increased conversions by 18%, and managed a $1.6M ad budget.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <img src="https://github.com/shatakshidata/aboutme/blob/main/TATA.png" alt="Tata Metaliks">
+                        <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/TATA.png" alt="Tata Metaliks">
                         <h3>Marketing Analyst</h3>
                         <p>Tata Metaliks (May 2021 - Dec 2022)<br>Developed a price forecasting model using Python, achieving 92% accuracy.</p>
                     </div>
@@ -237,21 +239,21 @@
             <div class="columns">
                 <div class="column">
                     <div class="tile">
-                        <img src="https://github.com/shatakshidata/aboutme/blob/main/Gies.png" alt="Gies College of Business">
+                        <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/Gies.png" alt="Gies College of Business">
                         <h3>M.S. Business Analytics</h3>
                         <p>University of Illinois Urbana-Champaign</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <img src="https://github.com/shatakshidata/aboutme/blob/main/imi.png" alt="IMI">
+                        <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/imi.png" alt="IMI">
                         <h3>MBA in Marketing</h3>
                         <p>IMI, India</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <img src="https://github.com/shatakshidata/aboutme/blob/main/iet.jpeg" alt="IET DAVV">
+                        <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/iet.jpeg" alt="IET DAVV">
                         <h3>Bachelor of Engineering</h3>
                         <p>IET DAVV, India</p>
                     </div>
