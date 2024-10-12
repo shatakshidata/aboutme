@@ -34,11 +34,11 @@
             color: #e0bbf4;
         }
 
-        /* Header Section with Lavender Gradient and Image */
+        /* Header Section with Light Purple Gradient and Enlarged Image */
         .hero {
-            background: linear-gradient(135deg, #e0bbf4, #f5e1ff);
+            background: linear-gradient(135deg, #c8a2c8, #e1ccec); /* Light Purple Gradient */
             color: #333;
-            padding: 3rem 0;
+            padding: 4rem 0;
             text-align: center;
             position: relative;
         }
@@ -52,8 +52,8 @@
             margin-bottom: 2rem;
         }
         .hero img {
-            width: 150px;
-            height: 150px;
+            width: 200px; /* Increase size */
+            height: 200px;
             border-radius: 50%;
             margin-bottom: 1rem;
             border: 5px solid white;
@@ -89,15 +89,7 @@
             text-align: center;
         }
 
-        /* About Me Section */
-        #about p {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        /* Tile Styles for Projects */
+        /* Tile Styles for Experience, Projects, and Education */
         .tile {
             background-color: #fff;
             border-radius: 8px;
@@ -105,7 +97,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
             margin-bottom: 1.5rem;
-            height: 300px; /* Ensuring all tiles are the same height */
+            text-align: center;
+        }
+        .tile img {
+            max-width: 100px;
+            margin-bottom: 1rem;
         }
         .tile:hover {
             transform: translateY(-5px);
@@ -115,40 +111,6 @@
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
-        }
-
-        /* Bullet Point Icons */
-        .icon-bullet {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-        }
-        .icon-bullet i {
-            margin-right: 10px;
-            color: #7e57c2;
-        }
-
-        /* Skills Section */
-        #skills .skill-bar {
-            background-color: #e1e1e1;
-            border-radius: 30px;
-            padding: 0.3rem;
-            margin-bottom: 1.2rem;
-        }
-        #skills .skill-level {
-            background-color: #7e57c2;
-            height: 1.2rem;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            color: white;
-            padding-left: 10px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .skill-label {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
         }
 
         /* Footer */
@@ -170,8 +132,9 @@
     <nav class="navbar">
         <div class="navbar-menu">
             <a class="navbar-item" href="#about">About</a>
-            <a class="navbar-item" href="#resume">Resume</a>
-            <a class="navbar-item" href="#portfolio">Portfolio</a>
+            <a class="navbar-item" href="#experience">Experience</a>
+            <a class="navbar-item" href="#projects">Projects</a>
+            <a class="navbar-item" href="#education">Education</a>
         </div>
     </nav>
 
@@ -203,39 +166,43 @@
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="section has-background-light">
+    <!-- Experience Section with Tiles and Company Logos -->
+    <section id="experience" class="section has-background-light">
         <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="content">
-                <div class="icon-bullet">
-                    <i class="fas fa-user-tie"></i>
-                    <p>Data Scientist | Seventh Sense Consulting (Aug 2024 - Present)</p>
+            <h2 class="section-title">Experience</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="tile">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Seventh_Sense_Consulting_logo.png/200px-Seventh_Sense_Consulting_logo.png" alt="Seventh Sense Logo">
+                        <h3>Data Scientist</h3>
+                        <p>Seventh Sense Consulting (Aug 2024 – Present)</p>
+                        <p>Developed an AI-powered tool to automate candidate sourcing using LLMs, saving over 20 hours of manual effort for recruiters.</p>
+                    </div>
                 </div>
-                <div class="icon-bullet">
-                    <i class="fas fa-bullhorn"></i>
-                    <p>Business Analyst & Operations | Darwinbox (Dec 2022 - July 2024)</p>
+                <div class="column">
+                    <div class="tile">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Darwinbox_Logo.png/200px-Darwinbox_Logo.png" alt="Darwinbox Logo">
+                        <h3>Business Analyst & Operations</h3>
+                        <p>Darwinbox (Dec 2022 – July 2024)</p>
+                        <p>Led marketing operations, increasing conversions by 18% through CRO strategies and tools like GA4 and Hotjar.</p>
+                    </div>
                 </div>
-                <div class="icon-bullet">
-                    <i class="fas fa-chart-bar"></i>
-                    <p>Marketing Analyst | Tata Metaliks (May 2021 - Dec 2022)</p>
-                </div>
-                <div class="icon-bullet">
-                    <i class="fas fa-user-graduate"></i>
-                    <p>M.S. in Business Analytics | University of Illinois Urbana-Champaign</p>
-                </div>
-                <div class="icon-bullet">
-                    <i class="fas fa-graduation-cap"></i>
-                    <p>Bachelor of Engineering in Electronics and Instrumentation | IET, India</p>
+                <div class="column">
+                    <div class="tile">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Tata_logo.svg/200px-Tata_logo.svg.png" alt="Tata Metaliks Logo">
+                        <h3>Marketing Analyst</h3>
+                        <p>Tata Metaliks (May 2021 – Dec 2022)</p>
+                        <p>Developed a price forecasting model using Python, achieving 92% accuracy and increasing web traffic by 25% through marketing strategies.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section with Interactive Tiles -->
-    <section id="portfolio" class="section">
+    <!-- Projects Section with Tiles -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
+            <h2 class="section-title">Projects</h2>
             <div class="columns">
                 <div class="column">
                     <div class="tile">
@@ -255,6 +222,30 @@
                         <p>Led the creation of 15+ automated Power BI dashboards for sales performance, improving decision-making and increasing conversions by 18% at Darwinbox.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section with Tiles and College Logos -->
+    <section id="education" class="section has-background-light">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="tile">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Seal_of_the_University_of_Illinois_at_Urbana-Champaign.svg/200px-Seal_of_the_University_of_Illinois_at_Urbana-Champaign.svg.png" alt="UIUC Logo">
+                        <h3>Master of Science</h3>
+                        <p>Business Analytics | University of Illinois Urbana-Champaign</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="tile">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/IET_India_logo.jpg/200px-IET_India_logo.jpg" alt="IET India Logo">
+                        <h3>Bachelor of Engineering</h3>
+                        <p>Electronics and Instrumentation | IET, India</p>
+                    </div>
+                </div>
+                <!-- Add more education or certifications as needed -->
             </div>
         </div>
     </section>
