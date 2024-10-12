@@ -6,11 +6,11 @@
     <meta name="description" content="Shatakshi Bhatnagar - Data Scientist & Marketing Analyst Portfolio">
     <meta name="author" content="Shatakshi Bhatnagar">
     <title>Shatakshi Bhatnagar | Portfolio</title>
-    
+
     <!-- CSS: Bulma Framework and Custom Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -20,10 +20,13 @@
             scroll-behavior: smooth;
         }
 
-        /* Navigation Bar with More Distinct Contrast */
+        /* Navigation Bar with Sticky Position */
         .navbar {
-            background-color: #4a3f8e; /* Darker purple for better contrast */
+            background-color: #4a3f8e;
             padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         .navbar-item {
             color: white;
@@ -36,15 +39,16 @@
 
         /* Header Section with Smaller Light Purple Gradient and Image Fix */
         .hero {
-            background: linear-gradient(135deg, #c4a9f4, #dcd4f7); /* Softer light purple */
+            background: linear-gradient(135deg, #c4a9f4, #dcd4f7);
             color: #333;
-            padding: 2rem 0; /* Reduced padding to make banner smaller */
+            padding: 2rem 0;
             text-align: center;
             position: relative;
         }
         .hero h1 {
-            font-size: 2.5rem; /* Slightly smaller text */
-            font-weight: 600;
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
         }
         .hero h2 {
             font-size: 1.3rem;
@@ -52,7 +56,7 @@
             margin-bottom: 1.5rem;
         }
         .hero img {
-            width: 180px; /* Adjusted image size */
+            width: 180px;
             height: 180px;
             border-radius: 50%;
             margin-bottom: 1rem;
@@ -82,11 +86,18 @@
 
         /* Section Titles */
         .section-title {
+            font-family: 'Merriweather', serif;
             font-size: 2.5rem;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 1.5rem;
             color: #7e57c2;
             text-align: center;
+        }
+
+        /* Section Dividers */
+        .section-divider {
+            border-top: 1px solid #dcd4f7;
+            margin: 20px 0;
         }
 
         /* Tile Styles for Experience, Projects, Education */
@@ -97,7 +108,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
             margin-bottom: 1.5rem;
-            height: 300px; /* Ensuring all tiles are the same height */
+            height: 300px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -108,10 +119,10 @@
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
         .tile img {
-            width: 100px; /* Fixed width for logos */
-            height: auto; /* Auto height to maintain aspect ratio */
+            width: 100px;
+            height: auto;
             margin-bottom: 1rem;
-            object-fit: contain; /* Prevent overflow */
+            object-fit: contain;
         }
         .tile h3 {
             font-size: 1.5rem;
@@ -122,46 +133,77 @@
             text-align: center;
         }
 
-        /* Skills Section */
-        .skills-list {
-            list-style: none;
-            padding-left: 0;
-            text-align: center;
+        /* Hover Effect for Interactive Projects */
+        .project-hover {
+            position: relative;
+            overflow: hidden;
         }
-        .skills-list li {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
+        .project-hover:hover .project-overlay {
+            opacity: 1;
         }
-        .skills-list i {
-            margin-right: 10px;
-            color: #7e57c2;
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            color: white;
+            padding: 20px;
         }
 
-        /* Certifications Section */
-        .certification-list {
-            list-style: none;
-            padding-left: 0;
-            text-align: center;
+        /* Skills Section with Progress Bars */
+        .progress-bar {
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
-        .certification-list li {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        .certification-list i {
-            margin-right: 10px;
-            color: #7e57c2;
+        .progress-level {
+            height: 100%;
+            background-color: #7e57c2;
+            width: 85%; /* Adjust based on skill level */
+            border-radius: 10px;
+            text-align: right;
+            padding-right: 10px;
+            line-height: 20px;
+            color: white;
         }
 
         /* Footer */
         footer {
-            background-color: #e0bbf4;
+            background-color: #4a3f8e;
             color: white;
             padding: 2rem 0;
             text-align: center;
         }
         footer p {
             font-size: 0.9rem;
-            color: #333;
+            color: white;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons i {
+            margin-right: 15px;
+            font-size: 1.5rem;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        .social-icons i:hover {
+            color: #d1c4e9;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .columns {
+                flex-direction: column;
+            }
+            .tile {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -184,7 +226,7 @@
     <section class="hero is-medium">
         <div class="hero-body">
             <div class="container">
-                <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/Headshot.jpg" alt="Shatakshi Bhatnagar"> <!-- Fixed image URL -->
+                <img src="https://raw.githubusercontent.com/shatakshidata/aboutme/main/Headshot.jpg" alt="Shatakshi Bhatnagar">
                 <h1 class="title">Shatakshi Bhatnagar</h1>
                 <h2 class="subtitle">Data Scientist & Marketing Analyst</h2>
                 <p>M.S. in Business Analytics | University of Illinois Urbana-Champaign</p>
@@ -207,6 +249,8 @@
             </p>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- Experience Section with Tiles -->
     <section id="experience" class="section has-background-light">
@@ -238,25 +282,27 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <!-- Projects Section with Interactive Tiles -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="columns">
                 <div class="column">
-                    <div class="tile">
+                    <div class="tile project-hover">
                         <h3><i class="fas fa-code"></i> AI-Powered Candidate Sourcing Tool</h3>
                         <p>Developed an AI tool using LLMs to automate candidate sourcing, reducing manual effort by over 20 hours per recruiter at Seventh Sense Consulting.</p>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="tile">
+                    <div class="tile project-hover">
                         <h3><i class="fas fa-chart-line"></i> Price Forecasting Model</h3>
                         <p>Created a Random Forest model to forecast prices with 92% accuracy, helping Tata Metaliks optimize pricing strategy and sales insights.</p>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="tile">
+                    <div class="tile project-hover">
                         <h3><i class="fas fa-chart-pie"></i> Marketing Analytics Dashboards</h3>
                         <p>Led the creation of 15+ automated Power BI dashboards for sales performance, improving decision-making and increasing conversions by 18% at Darwinbox.</p>
                     </div>
@@ -265,19 +311,31 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <div class="section-divider"></div>
+
+    <!-- Skills Section with Progress Bars -->
     <section id="skills" class="section has-background-light">
         <div class="container">
             <h2 class="section-title">Skills</h2>
-            <ul class="skills-list">
-                <li><i class="fas fa-database"></i> SQL, MySQL, NoSQL</li>
-                <li><i class="fas fa-code"></i> Python, R, SPSS</li>
-                <li><i class="fas fa-chart-bar"></i> Power BI, Tableau</li>
-                <li><i class="fas fa-cloud"></i> Google Cloud Platform, AWS, DataBricks</li>
-                <li><i class="fas fa-analytics"></i> Excel, Adobe Analytics</li>
-            </ul>
+            <div class="progress-bar">
+                <div class="progress-level" style="width: 95%;">Python</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-level" style="width: 90%;">R</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-level" style="width: 85%;">SQL</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-level" style="width: 80%;">Power BI</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-level" style="width: 75%;">Google Cloud Platform</div>
+            </div>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- Education Section with Tiles -->
     <section id="education" class="section has-background-light">
@@ -309,6 +367,8 @@
         </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <!-- Certifications Section -->
     <section id="certifications" class="section">
         <div class="container">
@@ -322,6 +382,8 @@
             </ul>
         </div>
     </section>
+
+    <div class="section-divider"></div>
 
     <!-- Activities & Leadership Section -->
     <section id="leadership" class="section has-background-light">
@@ -339,6 +401,10 @@
     <footer class="footer">
         <div class="content has-text-centered">
             <p>&copy; 2024 Shatakshi Bhatnagar | Built with Bulma &amp; Font Awesome</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shatakshibhatnagar/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/shatakshidata"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
 
