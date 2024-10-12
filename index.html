@@ -20,9 +20,9 @@
             scroll-behavior: smooth;
         }
 
-        /* Header Section with Gradient */
+        /* Header Section with Lavender Gradient */
         .hero {
-            background: linear-gradient(135deg, #e0bbf4, #f3d1f4);
+            background: linear-gradient(135deg, #e0bbf4, #f5e1ff);
             color: #333;
             padding: 3rem 0;
             text-align: center;
@@ -67,6 +67,14 @@
             text-align: center;
         }
 
+        /* About Me Section */
+        #about p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
         /* Interactive Tile for Projects and Work Experience */
         .tile {
             background-color: #fff;
@@ -74,6 +82,7 @@
             padding: 1.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 1.5rem;
         }
         .tile:hover {
             transform: translateY(-5px);
@@ -83,6 +92,17 @@
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
+        }
+
+        /* Bullet Point Icons */
+        .icon-bullet {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .icon-bullet i {
+            margin-right: 10px;
+            color: #7e57c2;
         }
 
         /* Skills Section */
@@ -157,7 +177,7 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <p>
-                I am a Data Scientist and Marketing Analyst with experience in automating processes using machine learning, analyzing complex datasets, and leveraging marketing strategies to drive business growth. I have worked with global companies like Darwinbox and Tata Metaliks, delivering impactful results through predictive modeling, data visualization, and optimization techniques.
+                I am passionate about blending marketing and data to deliver insightful solutions that help businesses thrive. Currently pursuing my master's in Business Analytics at the University of Illinois Urbana-Champaign, I focus on leveraging data-driven decision-making to solve complex marketing challenges. With my experience in marketing operations, managing ad budgets, and driving impactful strategies, I have consistently delivered results that contribute to business growth. My strengths include a combination of analytical skills, creativity, and a deep understanding of marketing technologies.
             </p>
         </div>
     </section>
@@ -169,19 +189,19 @@
             <div class="columns">
                 <div class="column">
                     <div class="tile">
-                        <h3>AI-Powered Candidate Sourcing Tool</h3>
+                        <h3><i class="fas fa-code"></i> AI-Powered Candidate Sourcing Tool</h3>
                         <p>Developed an AI tool using LLMs to automate candidate sourcing, reducing manual effort by over 20 hours per recruiter at Seventh Sense Consulting.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <h3>Price Forecasting Model</h3>
+                        <h3><i class="fas fa-chart-line"></i> Price Forecasting Model</h3>
                         <p>Created a Random Forest model to forecast prices with 92% accuracy, helping Tata Metaliks optimize pricing strategy and sales insights.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <h3>Marketing Analytics Dashboards</h3>
+                        <h3><i class="fas fa-chart-pie"></i> Marketing Analytics Dashboards</h3>
                         <p>Led the creation of 15+ automated Power BI dashboards for sales performance, improving decision-making and increasing conversions by 18% at Darwinbox.</p>
                     </div>
                 </div>
@@ -196,21 +216,21 @@
             <div class="columns">
                 <div class="column">
                     <div class="tile">
-                        <h3>Data Scientist | Seventh Sense Consulting</h3>
+                        <h3><i class="fas fa-laptop-code"></i> Data Scientist | Seventh Sense Consulting</h3>
                         <p>Aug 2024 – Present</p>
                         <p>Developed an AI-powered tool to automate the candidate sourcing process using LLM and ML models, saving over 20 hours of manual work for recruiters.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <h3>Business Analyst & Operations | Darwinbox</h3>
+                        <h3><i class="fas fa-bullhorn"></i> Business Analyst & Operations | Darwinbox</h3>
                         <p>Dec 2022 – July 2024</p>
                         <p>Led marketing operations, increasing conversions by 18% through CRO strategies and tools like GA4 and Hotjar. Built automated workflows on HubSpot, and analyzed large datasets to generate insights on HR trends.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <h3>Marketing Analyst | Tata Metaliks</h3>
+                        <h3><i class="fas fa-chart-bar"></i> Marketing Analyst | Tata Metaliks</h3>
                         <p>May 2021 – Dec 2022</p>
                         <p>Developed a price forecasting model using Python, achieving 92% accuracy. Implemented digital marketing strategies that increased web traffic by 25%, while improving sales insights through automated Power BI dashboards.</p>
                     </div>
@@ -278,9 +298,9 @@
         <div class="container">
             <h2 class="section-title">Activities & Leadership</h2>
             <div class="content">
-                <p>Best Reverse Mentor for Data Analytics project – Collaborated with the Head of Sales to implement key data strategies.</p>
-                <p>Runner-up in SmartCube Data Analytics Corporate Competition – Applied data analytics skills to solve complex business challenges.</p>
-                <p>Leader of the Data Analytics Society – Organized sessions and projects to help students enhance their analytical skills.</p>
+                <p><i class="fas fa-lightbulb"></i> Best Reverse Mentor for Data Analytics project – Collaborated with the Head of Sales to implement key data strategies.</p>
+                <p><i class="fas fa-trophy"></i> Runner-up in SmartCube Data Analytics Corporate Competition – Applied data analytics skills to solve complex business challenges.</p>
+                <p><i class="fas fa-users"></i> Leader of the Data Analytics Society – Organized sessions and projects to help students enhance their analytical skills.</p>
             </div>
         </div>
     </section>
