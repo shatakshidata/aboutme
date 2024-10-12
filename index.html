@@ -36,9 +36,9 @@
 
         /* Header Section with Light Purple Gradient and Enlarged Image */
         .hero {
-            background: linear-gradient(135deg, #c8a2c8, #e1ccec); /* Light Purple Gradient */
+            background: linear-gradient(135deg, #c4a9f4, #e0c8f4); /* Light Purple Gradient */
             color: #333;
-            padding: 4rem 0;
+            padding: 3rem 0;
             text-align: center;
             position: relative;
         }
@@ -52,7 +52,7 @@
             margin-bottom: 2rem;
         }
         .hero img {
-            width: 200px; /* Increase size */
+            width: 200px; /* Increased size */
             height: 200px;
             border-radius: 50%;
             margin-bottom: 1rem;
@@ -89,7 +89,7 @@
             text-align: center;
         }
 
-        /* Tile Styles for Experience, Projects, and Education */
+        /* Tile Styles for Experience, Projects, Education */
         .tile {
             background-color: #fff;
             border-radius: 8px;
@@ -97,20 +97,27 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
             margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .tile img {
-            max-width: 100px;
-            margin-bottom: 1rem;
+            height: 300px; /* Ensuring all tiles are the same height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .tile:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
+        .tile img {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
         .tile h3 {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 1rem;
+        }
+        .tile p {
+            text-align: center;
         }
 
         /* Footer */
@@ -166,40 +173,37 @@
         </div>
     </section>
 
-    <!-- Experience Section with Tiles and Company Logos -->
+    <!-- Experience Section with Tiles -->
     <section id="experience" class="section has-background-light">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="columns">
                 <div class="column">
                     <div class="tile">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Seventh_Sense_Consulting_logo.png/200px-Seventh_Sense_Consulting_logo.png" alt="Seventh Sense Logo">
+                        <img src="https://github.com/shatakshidata/aboutme/blob/main/seventhsense.png" alt="Seventh Sense">
                         <h3>Data Scientist</h3>
-                        <p>Seventh Sense Consulting (Aug 2024 – Present)</p>
-                        <p>Developed an AI-powered tool to automate candidate sourcing using LLMs, saving over 20 hours of manual effort for recruiters.</p>
+                        <p>Seventh Sense Consulting (Aug 2024 - Present)<br>Developed an AI-powered tool to automate candidate sourcing.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Darwinbox_Logo.png/200px-Darwinbox_Logo.png" alt="Darwinbox Logo">
-                        <h3>Business Analyst & Operations</h3>
-                        <p>Darwinbox (Dec 2022 – July 2024)</p>
-                        <p>Led marketing operations, increasing conversions by 18% through CRO strategies and tools like GA4 and Hotjar.</p>
+                        <img src="https://github.com/shatakshidata/aboutme/blob/main/darwinbox.png" alt="Darwinbox">
+                        <h3>Business Analyst</h3>
+                        <p>Darwinbox (Dec 2022 - Jul 2024)<br>Led marketing operations, increased conversions by 18%, and managed a $1.6M ad budget.</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Tata_logo.svg/200px-Tata_logo.svg.png" alt="Tata Metaliks Logo">
+                        <img src="https://github.com/shatakshidata/aboutme/blob/main/TATA.png" alt="Tata Metaliks">
                         <h3>Marketing Analyst</h3>
-                        <p>Tata Metaliks (May 2021 – Dec 2022)</p>
-                        <p>Developed a price forecasting model using Python, achieving 92% accuracy and increasing web traffic by 25% through marketing strategies.</p>
+                        <p>Tata Metaliks (May 2021 - Dec 2022)<br>Developed a price forecasting model using Python, achieving 92% accuracy.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section with Tiles -->
+    <!-- Projects Section with Interactive Tiles -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Projects</h2>
@@ -226,26 +230,32 @@
         </div>
     </section>
 
-    <!-- Education Section with Tiles and College Logos -->
+    <!-- Education Section with Tiles -->
     <section id="education" class="section has-background-light">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="columns">
                 <div class="column">
                     <div class="tile">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Seal_of_the_University_of_Illinois_at_Urbana-Champaign.svg/200px-Seal_of_the_University_of_Illinois_at_Urbana-Champaign.svg.png" alt="UIUC Logo">
-                        <h3>Master of Science</h3>
-                        <p>Business Analytics | University of Illinois Urbana-Champaign</p>
+                        <img src="https://github.com/shatakshidata/aboutme/blob/main/Gies.png" alt="Gies College of Business">
+                        <h3>M.S. Business Analytics</h3>
+                        <p>University of Illinois Urbana-Champaign</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="tile">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/IET_India_logo.jpg/200px-IET_India_logo.jpg" alt="IET India Logo">
-                        <h3>Bachelor of Engineering</h3>
-                        <p>Electronics and Instrumentation | IET, India</p>
+                        <img src="https://github.com/shatakshidata/aboutme/blob/main/imi.png" alt="IMI">
+                        <h3>MBA in Marketing</h3>
+                        <p>IMI, India</p>
                     </div>
                 </div>
-                <!-- Add more education or certifications as needed -->
+                <div class="column">
+                    <div class="tile">
+                        <img src="https://github.com/shatakshidata/aboutme/blob/main/iet.jpeg" alt="IET DAVV">
+                        <h3>Bachelor of Engineering</h3>
+                        <p>IET DAVV, India</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
